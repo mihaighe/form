@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="icon" href="/content/icon.png" />
+    <link rel="StyleSheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="content/rocket.png" alt="rocket" class="rocket" />
+      </div>
+      <div class="right">
+        <div>
+          <div class="form-container">
+            <div class="header">FORM EXAMPLE</div>
+            <form
+              action="results.html"
+              method="GET"
+              enctype="multipart/form-data"
+              class="form"
+              autocomplete="off"
+            >
+              <div class="form-item first">
+                <label for="name">NAME</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-item">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-item">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="form-item">
+                <label for="age">AGE</label>
+                <input type="number" name="age" id="age" />
+              </div>
+              <div class="form-item">
+                <label for="phone">PHONE</label>
+                <input type="tel" name="phone" id="phone" />
+              </div>
+              <div class="form-item">
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" />
+              </div>
+              <div class="form-item">
+                <div class="border">
+                  <label for="eyeColor">EYE COLOR</label>
+                  <select name="eyeColor" id="eyeColor">
+                    <option value="Green">Green</option>
+                    <option label="Red" value="Red"></option>
+                    <option label="Brown" value="Brown"></option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="date">BIRTHDATE</label>
+                <input type="date" name="date" id="date" min="2019-06-10" />
+              </div>
+              <div class="form-item">
+                GENDER
+                <div class="border flex">
+                  <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" />
+                  </div>
+                  <div>
+                    <label for="female">Female</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                    />
+                  </div>
+                  <div>
+                    <label for="other">Other</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="other"
+                      value="other"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-item">
+                ANIME WATCHED
+                <div class="border flex">
+                  <div>
+                    <label for="naruto">Naruto</label>
+                    <input type="checkbox" name="naruto" id="naruto" />
+                  </div>
+                  <div>
+                    <label for="bleach">Bleach</label>
+                    <input type="checkbox" name="bleach" id="bleach" />
+                  </div>
+                  <div>
+                    <label for="onePiece">One Piece</label>
+                    <input type="checkbox" name="onePiece" id="onePiece" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-item">
+                <label for="anime">WHY DO YOU WATCH ANIME</label>
+                <textarea id="anime" name="anime"></textarea>
+              </div>
+              <input type="hidden" name="hidden" value="hi" />
+              <div class="form-item">
+                <label for="file">FILE</label>
+                <input id="file" type="file" name="file" />
+              </div>
+              <div class="bottom-buttons">
+                <button type="reset">RESET</button>
+                <button type="submit">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
